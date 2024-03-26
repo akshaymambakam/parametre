@@ -57,11 +57,6 @@ make
 ./ptre ecgstl.ptre bflist221.txt 2 2 # This is on the whole ECG 221 signal
 ./ptre ecgstl.ptre bflist123.txt 2 2 # This is on the whole ECG 123 signal
 
-# Marine traffic rule violation: Subsubsection 6.2.4
-cp ptre ./tsdata/. # Copy the tool binary into the folder (tsdata) containing data
-cd tsdata # Go into the folder containing the data
-python monall.py # Run the tool on the data
-
 # To produce image in Figure 5b
 gnuplot ecgvis1.p
 # To produce image in Figure 5c
